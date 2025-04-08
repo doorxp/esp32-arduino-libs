@@ -111,8 +111,9 @@ typedef void* httpd_handle_t;
  *          available in "http_parser" library
  */
 typedef enum http_method httpd_method_t;
-
+#ifndef HTTP_ANY
 #define HTTP_ANY INT_MAX
+#endif //HTTP_ANY
 
 /**
  * @brief  Prototype for freeing context data (if any)
